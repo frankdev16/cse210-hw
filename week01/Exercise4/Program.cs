@@ -1,5 +1,4 @@
 using System;
-
 using System.Collections.Generic;
 
 class Program
@@ -31,9 +30,8 @@ class Program
             Console.WriteLine(numbers[i]);
         }
 
-        int maxNum;
-        maxNum = numbers[0];
 
+        int maxNum = numbers[0];
         for (int i = 0; i < numbers.Count; i++)
         {
             if (numbers[i] > maxNum)
@@ -41,20 +39,17 @@ class Program
                 maxNum = numbers[i];
             }
         }
-        Console.WriteLine(maxNum);
+        Console.WriteLine($"The largest number is: {maxNum}"); 
 
-        double sum;
-
-        sum = 0;
-
-        double average;
-        // maxNum = numbers[0];
-
+        double sum = 0;
         for (int i = 0; i < numbers.Count; i++)
         {
             sum += numbers[i];
         }
-        average = sum / numbers.Count;
-        Console.WriteLine(average);
+
+        double average = sum / numbers.Count;
+
+        Console.WriteLine($"The sum is: {sum}"); 
+        Console.WriteLine($"The average is: {average}"); 
     }
 }
